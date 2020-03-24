@@ -18,7 +18,7 @@ jobs:
           id: go        
 
         - name: Test App
-          run: go test simulator.go
+          run: go test
 
         - name: Build App
           run: go build simulator.go 
