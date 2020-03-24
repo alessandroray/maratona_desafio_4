@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func Testinit(t *testing.T) {
+func TestInit(t *testing.T) {
 	err := godotenv.Load()
 	
 	if err != nil {
