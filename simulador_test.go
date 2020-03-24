@@ -14,7 +14,7 @@ func TestInit(t *testing.T) {
 		t.Errorf("Falha Carregar .env")
 	}
 }
-func TestConnect (t *testing.T) { 
+func Testconnect (t *testing.T) { 
 	dsn := "amqp://" + os.Getenv("RABBITMQ_DEFAULT_USER") + ":" + os.Getenv("RABBITMQ_DEFAULT_PASS") + "@" + os.Getenv("RABBITMQ_DEFAULT_HOST") + ":" + os.Getenv("RABBITMQ_DEFAULT_PORT") + os.Getenv("RABBITMQ_DEFAULT_VHOST")
 	_, err := amqp.Dial(dsn)
 
